@@ -13,7 +13,7 @@ const MusicToggle = () => {
     audio.volume = 0.4;
     // Placeholder: replace this URL with your "Dil Ka Rishta" song file
     // Place your song file in /public/music/song.mp3
-    audio.src = "Dil Ka Rishta_320(PagaiWorld.com).mp3";
+    audio.src = "Dil Ka Rishta_320(PagaiWorld (mp3cut.net).mp3";
     audioRef.current = audio;
 
     return () => {
