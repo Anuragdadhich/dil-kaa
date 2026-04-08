@@ -7,7 +7,7 @@ const MusicToggle = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    const audio = new Audio("Dil Ka Rishta_320(PagaiWorld (mp3cut.net).mp3"); // ✅ public folder path
+    const audio = new Audio("music\\Dil Ka Rishta_320(PagaiWorld (mp3cut.net).mp3"); // ✅ public folder path
     audio.loop = true;
     audio.volume = 0.4;
     audioRef.current = audio;
