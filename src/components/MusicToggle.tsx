@@ -7,13 +7,9 @@ const MusicToggle = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    // Create audio element - user can replace src later
-    const audio = new Audio();
+    const audio = new Audio("Dil Ka Rishta_320(PagaiWorld (mp3cut.net).mp3"); // ✅ public folder path
     audio.loop = true;
     audio.volume = 0.4;
-    // Placeholder: replace this URL with your "Dil Ka Rishta" song file
-    // Place your song file in /public/music/song.mp3
-    audio.src = "Dil Ka Rishta_320(PagaiWorld (mp3cut.net).mp3";
     audioRef.current = audio;
 
     return () => {
